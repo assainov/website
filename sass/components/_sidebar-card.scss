@@ -1,0 +1,56 @@
+.sidebar-card {
+    background-color: $color-white;
+    padding: 4rem 3rem;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+
+    @include respond(phone) {
+        margin: 0 2rem;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 4rem;
+    }
+
+    &__heading {
+        margin-bottom: 2rem;
+    }
+
+    &__icon {
+        display: inline-block;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    &__content {
+
+        &--full-width {
+            margin: 0 -3rem -4rem -3rem;
+        }
+    }
+
+    &__row {
+        
+        @include clearfix;
+        &:not(:last-child) {
+            margin-bottom: 2%;
+        }
+    }
+
+    &__link {
+        float: left;
+        width: 32%;
+        &:not(:last-child) {
+            margin-right: 2%;
+        }
+    }
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+
+    
+}

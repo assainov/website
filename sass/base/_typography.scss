@@ -1,0 +1,35 @@
+body {
+    font-family: "Spectral", sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $color-grey-dark-2;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+input::-webkit-input-placeholder {
+    font-family: "Spectral", sans-serif;
+}
+
+.paragraph {
+
+    &:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    &__highlight {
+        color: $color-primary-1;
+    }
+
+    &--grey {
+        color: $color-grey-dark-1;
+    }
+}
