@@ -20,9 +20,6 @@
 
     &__list-item {
         display: inline-block;
-        &:not(:last-child) {
-            margin-right: 2rem;
-        }
         transition: transform 0.3s;
 
         &:hover {

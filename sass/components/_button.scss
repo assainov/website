@@ -5,6 +5,7 @@
         display: inline-block;
         text-transform: uppercase;
         font-weight: 600;
+        font-size: 1.4rem;
         padding: 0.7rem 1.7rem;
         position: relative;
         cursor: pointer;
@@ -25,7 +26,7 @@
     &:focus {
         outline: none;
         transform: translateY(-1px);
-        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
 
         &::after {
             border: 0.1rem solid;
@@ -46,6 +47,7 @@
 
     &--full-width {
         width: 100%;
+        text-align: center;
     }
 
     &--primary {
@@ -79,11 +81,38 @@
         border: 0.4rem solid;
 
         &--white {
+            &:link,
+            &:visited {
+
+                color: $color-white;
+                border-color: $color-white;
+    
+                &::after {
+                    border: 0.1rem solid $color-white;
+                }
+            }
+        }
+    }
+
+    &--cta {
+        &:link,
+        &:visited {
+            background: linear-gradient(to right, $color-secondary-2, $color-secondary-1);
+            border: none;
             color: $color-white;
-            border-color: $color-white;
+    
+            &::after {
+                background: linear-gradient(to right, $color-secondary-2, $color-secondary-1);
+            }
+
+        }
+
+        &:focus,
+        &:active {
+            border: none;
 
             &::after {
-                border: 0.1rem solid $color-white;
+                border: none;
             }
         }
     }
