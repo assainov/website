@@ -91,6 +91,12 @@
                     border: 0.1rem solid $color-white;
                 }
             }
+
+            &:hover,
+            &:focus {
+                color: $color-primary-1;
+                border-color: $color-primary-1;
+            }
         }
     }
 
