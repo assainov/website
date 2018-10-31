@@ -699,9 +699,12 @@ input::-webkit-input-placeholder {
 
 .header__hero {
   height: 30rem;
+  background: url("../img/header-bg.jpeg"), -webkit-gradient(linear, left top, right bottom, from(#79ccff), to(#6271ff));
+  background: url("../img/header-bg.jpeg"), -webkit-linear-gradient(left top, #79ccff, #6271ff);
+  background: url("../img/header-bg.jpeg"), -o-linear-gradient(left top, #79ccff, #6271ff);
   background: url("../img/header-bg.jpeg"), linear-gradient(to right bottom, #79ccff, #6271ff);
   background-blend-mode: screen;
-  background-size: 100%;
+  background-size: cover;
   background-position: center center;
   position: relative; }
 
