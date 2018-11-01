@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ilyas Assainov</title>
 
+    <!-- Swiper Slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/css/swiper.css">
+
     <link href="https://fonts.googleapis.com/css?family=Spectral:300,400,400i,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/icon-font.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -54,10 +58,10 @@
                 </div>
                 <div class="col-2-of-3">
                     <ul class="header__list">
-                        <li class="header__list-item"><a href="#" class="header__link">Timeline</a></li>
-                        <li class="header__list-item"><a href="#" class="header__link header__link--active">About Me</a></li>
-                        <li class="header__list-item"><a href="#" class="header__link">Projects</a></li>
-                        <li class="header__list-item"><a href="#" class="header__link">Blog</a></li>
+                        <li class="header__list-item"><a href="index.html" class="header__link">Timeline</a></li>
+                        <li class="header__list-item"><a href="about.html" class="header__link header__link--active">About Me</a></li>
+                        <li class="header__list-item"><a href="projects.html" class="header__link">Projects</a></li>
+                        <li class="header__list-item"><a href="blog.html" class="header__link">Blog</a></li>
                     </ul>
                 </div>
             </div>
@@ -74,13 +78,13 @@
                     </div>
                     <div class="sidebar-card__content">
                         <ul class="sidebar-card__list">
-                            <li class="sidebar-card__list-item"><a href="#" class="sidebar-card__list-link">Overview</a></li>
-                            <li class="sidebar-card__list-item"><a href="#" class="sidebar-card__list-link">Education</a></li>
-                            <li class="sidebar-card__list-item"><a href="#" class="sidebar-card__list-link">Experience</a></li>
-                            <li class="sidebar-card__list-item"><a href="#" class="sidebar-card__list-link">Accomplishments & skills</a></li>
-                            <li class="sidebar-card__list-item"><a href="#" class="sidebar-card__list-link">Major projects</a></li>
-                            <li class="sidebar-card__list-item"><a href="#" class="sidebar-card__list-link">References</a></li>
-                            <li class="sidebar-card__list-item"><a href="#" class="sidebar-card__list-link">Other</a></li>
+                            <li class="sidebar-card__list-item"><a href="#section-overview" class="sidebar-card__list-link">Overview</a></li>
+                            <li class="sidebar-card__list-item"><a href="#section-education" class="sidebar-card__list-link">Education</a></li>
+                            <li class="sidebar-card__list-item"><a href="#section-experience" class="sidebar-card__list-link">Experience</a></li>
+                            <li class="sidebar-card__list-item"><a href="#section-accomplishments" class="sidebar-card__list-link">Accomplishments & skills</a></li>
+                            <li class="sidebar-card__list-item"><a href="#section-major-projects" class="sidebar-card__list-link">Major projects</a></li>
+                            <li class="sidebar-card__list-item"><a href="#section-references" class="sidebar-card__list-link">References</a></li>
+                            <li class="sidebar-card__list-item"><a href="#section-hobbies" class="sidebar-card__list-link">Hobbies</a></li>
                         </ul>
                         <a href="#" class="btn btn--cta btn--full-width btn--large">Download CV</a>
                     </div>
@@ -114,7 +118,7 @@
         </div>
         <div class="col-2-of-3">
             <main class="main about-content">
-                <section class="section-overview">
+                <section class="section-overview" id="section-overview">
                     <div class="u-margin-bottom-small">
                         <h2 class="heading-primary">Overview</h2>
                     </div>
@@ -138,7 +142,7 @@
                         </tr>
                     </table>
                 </section>
-                <section class="section-education">
+                <section class="section-education" id="section-education">
                     <div class="u-margin-bottom-medium">
                         <h2 class="heading-primary">Education</h2>
                     </div>
@@ -156,7 +160,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section-experience">
+                <section class="section-experience" id="section-experience">
                     <div class="u-margin-bottom-medium">
                         <h2 class="heading-primary">Experience</h2>
                     </div>
@@ -184,7 +188,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="section-accomplishments">
+                <section class="section-accomplishments" id="section-accomplishments">
                     <div class="u-margin-bottom-medium">
                         <h2 class="heading-primary-2">Accomplishments & Skills</h2>
                     </div>
@@ -218,22 +222,58 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="progress">
-                            <h6 class="progress__title">HTML5 & CSS3</h6>
-                            <progress class="progress__bar" max="100" value="97"></progress>
-                            <h6 class="progress__title">JavaScript</h6>
-                            <progress class="progress__bar" max="100" value="94"></progress>
-                            <h6 class="progress__title">MERN Stack</h6>
-                            <progress class="progress__bar" max="100" value="88"></progress>
-                            <h6 class="progress__title">Data Structures & Algorithms</h6>
-                            <progress class="progress__bar" max="100" value="85"></progress>
-                            <h6 class="progress__title">Testing</h6>
-                            <progress class="progress__bar" max="100" value="83"></progress>
-                            <h6 class="progress__title">UX & UI Design</h6>
-                            <progress class="progress__bar" max="100" value="79"></progress>
+                        <div class="progress u-margin-left-medium">
+                            <div class="progress__text-box">
+                                <h6 class="progress__title">HTML5 & CSS3</h6>
+                                <span class="progress__value">97%</span>
+                            </div>
+                            
+                            <div class="progress__bar">
+                                <div class="progress__active" style="width:97%"></div>
+                            </div>
+                            <div class="progress__text-box">
+                                <h6 class="progress__title">JavaScript</h6>
+                                <span class="progress__value">94%</span>
+                            </div>
+                            
+                            <div class="progress__bar">
+                                <div class="progress__active" style="width:94%"></div>
+                            </div>
+                            <div class="progress__text-box">
+                                <h6 class="progress__title">MERN Stack</h6>
+                                <span class="progress__value">88%</span>
+                            </div>
+                            
+                            <div class="progress__bar">
+                                <div class="progress__active" style="width:88%"></div>
+                            </div>
+                            <div class="progress__text-box">
+                                <h6 class="progress__title">Data Structures & Algorithms</h6>
+                                <span class="progress__value">85%</span>
+                            </div>
+                            
+                            <div class="progress__bar">
+                                <div class="progress__active" style="width:85%"></div>
+                            </div>
+                            <div class="progress__text-box">
+                                <h6 class="progress__title">Testing</h6>
+                                <span class="progress__value">83%</span>
+                            </div>
+                            
+                            <div class="progress__bar">
+                                <div class="progress__active" style="width:83%"></div>
+                            </div>
+                            <div class="progress__text-box">
+                                <h6 class="progress__title">UX & UI Design</h6>
+                                <span class="progress__value">79%</span>
+                            </div>
+                            
+                            <div class="progress__bar">
+                                <div class="progress__active" style="width:79%"></div>
+                            </div>
                         </div>
                 </section>
-                <section class="section-major-projects">
+                <section class="section-major-projects" id="section-major-projects">
                     <div class="u-margin-bottom-medium">
                         <h2 class="heading-primary-2">Major Projects</h2>
                     </div>
@@ -261,9 +301,83 @@
                             </div>
                         </div>
                 </section>
-                <section class="section-references">
+                <section class="section-references" id="section-references">
+                    <h2 class="heading-primary">References</h2>
+                    <div class="swiper-box">
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="reference u-margin-top-large">
+                                        <figure class="reference__image-box">
+                                            <img src="img/referal-photo.jpg" alt="Referent photo" class="reference__image">
+                                        </figure>
+                                        <p class="reference__text paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea soluta voluptatum nulla natus porro magnam nesciunt consequatur odit? Tempore, nisi id? Fugit asperiores repellat ullam ducimus. Hic cumque aut ipsam.</p>
+                                        <h2 class="reference__person u-text-center">James Anderson</h2>
+                                        <p class="reference__relationship u-text-center">Former manager</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reference u-margin-top-large">
+                                        <figure class="reference__image-box">
+                                            <img src="img/referal-photo.jpg" alt="Referent photo" class="reference__image">
+                                        </figure>
+                                        <p class="reference__text paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea soluta voluptatum nulla natus porro magnam nesciunt consequatur odit? Tempore, nisi id? Fugit asperiores repellat ullam ducimus. Hic cumque aut ipsam.</p>
+                                        <h2 class="reference__person u-text-center">James Anderson</h2>
+                                        <p class="reference__relationship u-text-center">Former manager</p>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reference u-margin-top-large">
+                                        <figure class="reference__image-box">
+                                            <img src="img/referal-photo.jpg" alt="Referent photo" class="reference__image">
+                                        </figure>
+                                        <p class="reference__text paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea soluta voluptatum nulla natus porro magnam nesciunt consequatur odit? Tempore, nisi id? Fugit asperiores repellat ullam ducimus. Hic cumque aut ipsam.</p>
+                                        <h2 class="reference__person u-text-center">James Anderson</h2>
+                                        <p class="reference__relationship u-text-center">Former manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </section>
+                <section class="section-hobbies" id="section-hobbies">
                     <div class="u-margin-bottom-medium">
-                        <h2 class="heading-primary">References</h2>
+                        <h2 class="heading-primary-2">Hobbies</h2>
+                    </div>
+                    <div class="u-flex-row">
+                        <div class="hobby">
+                            <div class="hobby__title">
+                                <div class="hobby__icon"><ion-icon name="ios-desktop"></ion-icon></div>
+                                <h3 class="hobby__name">Blogging</h3>
+                            </div>
+                            <div class="hobby__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ullamco laboris. <a href="#" class="hobby__link">Check out my blog &RightArrow;</a>
+                            </div>
+                        </div>
+                        <div class="hobby">
+                            <div class="hobby__title">
+                                <div class="hobby__icon"><ion-icon name="people"></ion-icon></div>
+                                <h3 class="hobby__name">Public speaking</h3>
+                            </div>
+                            <div class="hobby__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+                            </div>
+                        </div>
+                        <div class="hobby">
+                            <div class="hobby__title">
+                                <div class="hobby__icon"><ion-icon name="ios-search"></ion-icon></div>
+                                <h3 class="hobby__name">Learning new things</h3>
+                            </div>
+                            <div class="hobby__text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
@@ -351,6 +465,41 @@
     </section>
     -->
 
+
+    
+
+    <!-- Ion icons -->
     <script src="https://unpkg.com/ionicons@4.4.6/dist/ionicons.js"></script>
+
+    <!-- Swiper slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.esm.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.1/js/swiper.esm.bundle.js"></script>
+
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            // My setup
+            
+            slidesPerView: 'auto',
+            spaceBetween: 45,
+
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        
+            // And if we need scrollbar
+            scrollbar: {
+            el: '.swiper-scrollbar',
+            },
+        })
+    </script>
 </body>
 </html>
