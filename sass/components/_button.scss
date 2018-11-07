@@ -101,6 +101,7 @@
     }
 
     &--cta {
+        &,
         &:link,
         &:visited {
             background: linear-gradient(to right, $color-secondary-2, $color-secondary-1);
@@ -113,6 +114,7 @@
 
         }
 
+        &,
         &:focus,
         &:active {
             border: none;

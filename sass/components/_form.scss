@@ -27,5 +27,11 @@
         &::-webkit-input-placeholder {
             color: $color-grey-dark-1;
         }
+
+        &--small {
+            max-width: 60%;
+            padding: 0.8rem 1.7rem;
+            font-size: 1.4rem;
+        }
     }
 }
